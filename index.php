@@ -123,15 +123,15 @@ url : "delete_data.php",
 type : "POST",
 data : {id:del},
 success : function() {
-swal({
-title: "Sweet!",
-text: "Delete data",
-imageUrl: 'thumbs-up.jpg'
+ swal({
+ title: "Sweet!",
+  text: "Delete data",
+ imageUrl: 'thumbs-up.jpg'
+  }).then(function() {
+  
+window.location.href = "index.php";
 });
-}
-});
-swal("Poof! Your imaginary file has been deleted!", {
-icon: "success",
+ }
 });
 } else {
 swal("Your imaginary file is safe!");
@@ -139,6 +139,8 @@ swal("Your imaginary file is safe!");
 });
 });
 });
+
+
 </script>
 </body>
 </html>
