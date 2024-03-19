@@ -3,8 +3,8 @@ class database{
     public $que;
     private $servername = 'localhost';
     private $username = 'root';
-    private $password = 'admin';
-    private $dbname = 'oop_db';
+    private $password = '';
+    private $dbname = 'oop_B_db';
     private $result = array();
     private $mysqli = '';
     
